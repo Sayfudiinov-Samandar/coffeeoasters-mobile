@@ -76,7 +76,7 @@ img{
     border: none;
 }
 
-.st-nav{
+.st-naw{
     display: none;
 }
 .st-naw__list{
@@ -110,7 +110,7 @@ img{
     
 
 
-    .st-nav{
+    .st-naw{
         display: none;
     }
     .header-box__btn{
@@ -211,7 +211,7 @@ img{
 @media only screen and (min-width: 600px){
         
 
-    .st-nav{
+    .st-naw{
         display: block;
     }
     .header-box__btn{
@@ -272,7 +272,7 @@ img{
         padding: 0 30px;
     }
 
-    .st-nav{
+    .st-naw{
         display: block;
     }
     .header-box__btn{
@@ -307,8 +307,8 @@ img{
         margin: 0;
         margin-bottom: 56px;
         font-weight: 400;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 26px;
         color: #FEFCF7;
         text-align: left;
 
