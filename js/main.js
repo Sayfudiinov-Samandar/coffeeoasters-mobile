@@ -1,7 +1,8 @@
-var elBurrgerBtn=document.querySelector("header-box__btn");
-var elHrNavmb=document.querySelector("st-naw");
+var elBurrgerBtn=document.querySelector(".header-box__btn");
+var elHrNavmb=document.querySelector(".header-box");
 
 
-elBurrgerBtn.addEventListener('click', () =>{
-    elHrNavmb.classList.toggle('active')
+
+elBurrgerBtn.addEventListener('click', function(){
+    elHrNavmb.classList.toggle("header-naw__open")
 })
