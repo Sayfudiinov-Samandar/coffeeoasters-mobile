@@ -694,7 +694,7 @@ img{
         top: 90%;
         left: 0%;
         width: 100%;
-        height: 245px;
+        height: 700px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
         background-color: #2C343E;
@@ -865,13 +865,15 @@ img{
 
 
     .site-button--active{
-        display: inline-block;
         margin: 0 auto;
         margin-top: 79px;
-        margin-left: calc(50% - 90px);
     
     }
 
+    .btn{
+        margin-left: calc(50% - 90px);
+
+    }
     .site-button{
         cursor: pointer;
     }
