@@ -112,7 +112,9 @@ img{
     text-decoration: none;
 }
 
-
+.st-naw__link:hover{
+   color: #333D4B;
+}
 
 
 
@@ -279,25 +281,40 @@ img{
         background-repeat: no-repeat;
     }
     .why-section{
-        padding-bottom: 375px;
+        padding-bottom: 0;
     }
-
     .why-box{
         position: relative;
         padding: 0 24px;
-        padding-bottom: 700px;
         background-color: #2C343E;
         border-radius: 10px;
+        z-index: 3;
     }
+
+    .why-box::after{
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        width: 100%;
+        height: 245px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #2C343E;
+        content: "";
+    }
+
     .why-box__text-box{
         padding: 64px 24px 28px 24px;
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
     }
     .why-box__title{
         margin: 0;
         margin-bottom: 24px;
         font-weight: 900;
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 32px;
+        line-height: 48px;
         text-align: center;
         color: #FEFCF7;    
     }   
@@ -314,26 +331,35 @@ img{
     }
 
     .why-box-list{
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
         padding: 0 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 3;
     }
     .why-box-item{
+        flex-wrap: 1;
         position: relative;
-        left: -4%;
+        left: 0;
         width: 100%;
-        max-width: 279px;
-        padding: 200px 33px 50px 33px;
+        max-width: 350px;
+        padding: 200px 48px 48px 48px;
         background-color: #0E8784;
         border-radius: 8px;
         list-style: none;
     }
-    .why-box-item:not(:last-child){
-        margin-bottom: 24px;
+    .why-box-item{
+        margin: 20px;
     }
     .why-box-item::before{
         position: absolute;
-        top: 20%;
-        left: 36%;
+        top: 23%;
+        left: 34%;
         width: 100%;
         max-width: 71px;
         height: 71px;
@@ -350,6 +376,8 @@ img{
     }
  
     .why-box-item-title{
+        margin: 0;
+        margin-bottom: 24px;
         font-weight: 900;
         font-size: 24px;
         line-height: 32px;
@@ -358,6 +386,9 @@ img{
     }
 
     .why-box-item-text{
+
+        margin: 0;
+
         font-weight: 400;
         font-size: 15px;
         line-height: 25px;
@@ -366,7 +397,7 @@ img{
     }
 
     .how-section{
-        padding-top: 375px;
+        padding-top: 70px;
         padding-bottom: 120px;
     }
 
@@ -436,18 +467,25 @@ img{
 
 
     .site-button--active{
+        margin: 0 auto;
         margin-top: 79px;
+        margin-left: calc(50% - 90px);
+    
     }
 
     .site-button{
+        display: inline-block;
+        text-decoration: none;
         cursor: pointer;
     }
     .site-button:hover{
         background-color:  #66D2CF;
     }
-    .site-button:checked{
-        background-color:  #E2DEDB;
+    .site-button:active{
+        background-color: #E2DEDB;
     }
+
+
     .footer-box{
         background-color: #2C343E;
         padding: 54px;
@@ -486,6 +524,18 @@ img{
         text-transform: uppercase;
         color: #83888F;    
         text-decoration: none;
+    }
+    .footer-box__symbols{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    .footer-box__sym-link{
+        color: #fff;
+    }
+
+    .footer-box__sym-link:hover{
+        color: #FDD6BA;
     }
     .footer-box__link:hover{
         color: #FEFCF7;
@@ -815,8 +865,10 @@ img{
 
 
     .site-button--active{
+        display: inline-block;
         margin: 0 auto;
         margin-top: 79px;
+        margin-left: calc(50% - 90px);
     
     }
 
@@ -1233,7 +1285,7 @@ img{
     .site-button:hover{
         background-color:  #66D2CF;
     }
-    .site-button:checked{
+    .site-button:active{
         background-color:  #E2DEDB;
     }
     .footer-box{
@@ -1636,7 +1688,7 @@ img{
     .site-button:hover{
         background-color:  #66D2CF;
     }
-    .site-button:checked{
+    .site-button:active{
         background-color:  #E2DEDB;
     }
     .footer-box{
