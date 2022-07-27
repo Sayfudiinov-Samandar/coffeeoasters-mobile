@@ -1605,7 +1605,7 @@ img{
     }
         .how-box__list::before{
         position: absolute;
-        top: -70%;
+        top: -73%;
         left: 2%;
         content: "";
         max-width: 500px;
@@ -1790,12 +1790,12 @@ img{
 }
 @media screen and (min-width: 1160px){
     .how-box__list::before{
-        max-width: 748px;
+        max-width: 734px;
     }  
     
 }@media screen and (min-width: 1224px){
     .how-box__list::before{
-        max-width: 787px;
+        max-width: 753px;
     }  
     
 }
