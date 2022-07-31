@@ -553,6 +553,182 @@ img{
         color: #FDD6BA;
     }
 
+    .about-hr-all{
+        background-image: url("../images/about-hero-bg-mb.jpg");
+    }
+
+    .ab-our-section{
+        padding: 120px 0;
+    }
+    .ab-our{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ab-our__desk{
+        display: none;
+    }
+
+
+    .ab-our__lp{
+        display: none;
+    }
+
+    .ab-our__img-box{
+        display: inline-block;
+        margin-bottom: 48px;
+    }
+
+    .ab-our__mb{
+        max-width: 327px;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .ab-our__title{
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #333D4B;    
+    }
+    .ab-our__text{
+        margin: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #333D4B;
+        mix-blend-mode: normal;
+        opacity: 0.8;    
+    }
+.qua-section{
+    padding-bottom: 120px;
+}
+.qua-box__img-lp{
+    display: none;
+}
+.qua-box__img-desk{
+    display: none;
+}
+
+.qua-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.qua-box__imges{
+    
+    position: absolute;
+    top: -15%;
+    left: calc(50% + -135px);
+}
+.qua-box__img-mb{
+    max-width: 279px;
+    height: 156px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.qua-box{
+    position: relative;
+    padding: 130px 24px 61px 24px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.qua-box__title{
+    margin: 0;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FEFCF7;    
+}
+
+.qua-box__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;    
+}
+
+
+.count__title{
+    margin: 0;
+    margin-bottom: 170px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #83888F;   
+}
+.count__list{
+
+    max-width: 500px;
+    width: 100%;
+    padding: 0;
+}
+.count__item{
+    flex-wrap: 1;
+    position: relative;
+    list-style: none;
+}
+.count__item:not(:last-child){
+    margin-bottom: 177px;
+}
+
+.count__item::before{
+    position: absolute;
+    top: -70%;
+    left: calc(50% + -20px);
+    background-image: url("../images/UK.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 49px;
+    content: "";
+}
+.count__item:nth-child(2):before{
+    background-image: url("../images/canada.svg");
+    width: 51px;
+    height: 49px;
+}
+.count__item:nth-child(3):before{
+    top: -35%;
+    background-image: url("../images/australiya.svg");
+    width: 48px;
+    height: 43px;
+}
+
+.count__item-title{
+    margin: 0;
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #333D4B;    
+}
+.count__item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;    
+}
+.countries-section{
+    padding-bottom: 120px;
+}
 
 @media only screen and (min-width: 450px) {
     .hr-all-box{
@@ -561,6 +737,15 @@ img{
         padding-left: 58px;
     }
 
+    .count__item:nth-child(3):before {
+        top: -65%;
+        background-image: url(../images/australiya.svg);
+        width: 48px;
+        height: 43px;
+    }
+    .about-hr-all{
+        background-image: url("../images/about-hero-bg-mb.jpg");
+    }
     .hr-box__title{
         margin: 0;
         margin-bottom: 24px;
@@ -935,7 +1120,21 @@ img{
         color: #FDD6BA;
     }
 
-   
+    .count__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width:  600px;
+    }
+    .count__list{
+        max-width: 668px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        gap: 24px;
+       }
 
 }
 
@@ -956,6 +1155,9 @@ img{
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
+    }
+    .about-hr-all{
+        background-image: url("../images/about-hero-bg-mb.jpg");
     }
     .header-box{
         width: 100%;
@@ -1346,11 +1548,30 @@ img{
     }
 
    
-
+    .count__item:not(:last-child) {
+        margin-bottom: 0px;
+    }
 }
 
-@media only screen and (min-width: 740px) {
-
+@media screen and (min-width: 560px) {
+    .count__item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .count__item:nth-child(3):before {
+        top: -65%;
+        background-image: url(../images/australiya.svg);
+        width: 48px;
+        height: 43px;
+    }
+    .count__list{
+        max-width: 668px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        gap: 24px;
+       }
 }
 
   
@@ -1374,6 +1595,10 @@ img{
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
+    }
+    .about-hr-all{
+        background-image: url("../images/about-our-bg-lap.jpg");
+        /* background-size: 690px; */
     }
 
     .hr-box{
@@ -1748,8 +1973,70 @@ img{
         color: #FDD6BA;
     }
 
-   
 
+    .ab-our{
+        flex-direction: row;
+    }
+
+    .ab-our__mb{
+        height: 470px;
+    }
+
+    .ab-our__text-box{
+        margin-left: 70px;
+        max-width: 339px;
+    }
+    .ab-our__title{
+        text-align: left;
+    }
+
+    .ab-our__text{
+        text-align: left;
+    }
+    .ab-our-section{
+        padding-bottom: 230px;
+    }
+    .qua-box{
+        position: relative;
+        padding: 235px 24px 61px 24px;
+        background-color: #2C343E;
+        border-radius: 10px;
+    }
+    .qua-box__imges{
+        top: -30%;
+        left: calc(50% + -275px);
+    }
+    .qua-box__img-mb{
+        display: none;
+    }
+    .qua-box__img-lp{
+        display: block;
+        max-width: 573px;
+        height: 320px;
+        width: 100%;
+    }
+    .count__title{
+        text-align: left;
+        margin-bottom: 170px;
+    }
+   .count__list{
+    max-width: 668px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+   }
+   .count__item:before{
+    left: calc(50% + -75px);
+   }
+   .count__item-title{
+    text-align: left;
+   }
+   .count__item-text{
+    text-align: left;
+   }
 }
     
 
@@ -1841,6 +2128,9 @@ img{
         background-repeat: no-repeat;
         border-radius: 5px;
     }
+    .about-hr-all{
+        background-image: url("../images/about-hero-bg-desk.jpg");
+    }    
 
     .hr-box{
         width: 100%;
@@ -1938,7 +2228,9 @@ img{
     .site-button--active{
         margin-top: 44px;
     }
-    
+    .ab-our-section{
+        padding-bottom: 180px;
+    }
     .footer-box{
         display: flex;
         align-items: center;
@@ -1998,4 +2290,89 @@ img{
     .footer-box__sym-link:hover{
         color: #FDD6BA;
     }
+    .ab-our{
+        align-items: center;
+    }
+
+
+    .ab-our__mb{
+        max-width: 445px;
+        height: 520px;
+    }
+
+    .ab-our__text-box{
+        max-width: 540px;
+        margin-left: 125px;
+    }
+    .ab-our__title{
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+
+    .qua-box{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 100px 24px 176px 61px;
+        background-color: #2C343E;
+        border-radius: 10px;
+    }
+    .qua-box__imges{
+        top: -20%;
+        left: calc(50% + 50px);
+    }
+
+    .qua-box__title{
+        margin-bottom: 32px;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: left;
+
+    }
+    .qua-box__text{
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .qua-box__text-box{
+        max-width: 540px;
+        width: 100%;
+    }
+    .qua-box__img-mb{
+        display: none;
+    }
+    .qua-box__img-lp{
+        display: none;
+    }
+    .qua-box__img-desk{
+        display: block;
+        max-width: 445px;
+        height: 474px;
+        width: 100%;
+    }
+    .count__title{
+        text-align: left;
+        margin-bottom: 167px;
+    }
+    .count__list{
+        max-width: 1045px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 24px;
+       }
+       .count__item:before{
+        left: calc(50% + -75px);
+       }
+       .count__item-title{
+        text-align: left;
+       }
+       .count__item-text{
+        text-align: left;
+       }
 }
