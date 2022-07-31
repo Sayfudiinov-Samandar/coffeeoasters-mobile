@@ -704,7 +704,7 @@ img{
     height: 49px;
 }
 .count__item:nth-child(3):before{
-    top: -35%;
+    top: -65%;
     background-image: url("../images/australiya.svg");
     width: 48px;
     height: 43px;
